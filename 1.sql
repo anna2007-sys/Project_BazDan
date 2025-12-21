@@ -59,4 +59,3 @@ CREATE TABLE Orders_Item (
     FOREIGN KEY (orders_id) REFERENCES Orders(orders_id),
     FOREIGN KEY (service_id) REFERENCES Services(services_id)
 );
-
