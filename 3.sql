@@ -152,7 +152,7 @@ SELECT
     SUM(oi.quantity * oi.unit_price) as total_sales_today
 FROM orders o
 JOIN orders_item oi ON o.orders_id = oi.orders_id
-WHERE DATE(o.orders_time) = '2024-05-10'  
+WHERE DATE(o.orders_time) = CURRENT_DATE
 GROUP BY DATE(o.orders_time);
 
 --2.Выбрать самый продаваемый товар в категории food
